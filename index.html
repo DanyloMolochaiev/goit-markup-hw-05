@@ -49,7 +49,7 @@
             <section class="hero overlay">
                 <div class="container">
                 <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-            <button type="button" class="button-order">Заказать услугу</button>
+            <button data-modal-open type="button" class="button-order">Заказать услугу</button>
                  </div>
         </section>
     <!--Описание возможностей/способностей-->
@@ -106,6 +106,9 @@
                     alt="верстка сайтов" 
                     width="370" 
                     height="294"> 
+                        <div class="services-text">
+              Десктопные приложения
+            </div>
                 </li>
                 <li class="services-item">
                     <img src="./images/box2.jpg" 
@@ -113,6 +116,9 @@
                     width="370"
                     height="294"
                     > 
+                           <div class="services-text">
+               Мобильные приложения
+            </div>
                 </li>
                 <li class="services-item">
                     <img src="./images/box3.jpg" 
@@ -120,6 +126,9 @@
                     width="370"
                     height="294"
                     > 
+                <div class="services-text">
+               Дизайнерские решения
+            </div>
                 </li>
             </ul>
             </div>
@@ -391,6 +400,21 @@
 </div>
 </div>
     </footer>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <!-- <div class="cascad"> -->
+      <button class="modal-button" data-modal-close type="button">
+        <svg class="backdrop-svg" width="11px" height="11px">
+          <use href="./images/sprite_svg/project-icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <script src="./modal.js"></script>
+
     </body>
 </html>
 
