@@ -170,8 +170,7 @@ align-items: center;
 .adress:hover,
 .adress:focus {
     color: var(--text-color-blue);
-    cursor: pointer;
-}
+  }
 /* Налаштування main-nav */
 .main-nav {
     display: flex;
@@ -322,7 +321,8 @@ letter-spacing: 0.03em;
 margin-bottom: 50px;
 }
 .services-item {
-    display: flex;
+    /* display: flex; */
+    position: relative;
 }
 .services-list {
     display: flex;
@@ -337,19 +337,15 @@ margin-bottom: 50px;
 .services-text {
     display: flex;
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 70px;
-  overflow: hidden;
   bottom: 0;
+  left: 0;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
-  text-transform: uppercase;
+  line-height: 1.14;
+   text-transform: uppercase;
   background-color: var(--color-services-img);
   color: var(--color-white);
 }
@@ -438,11 +434,9 @@ padding-bottom: 30px;
     border-radius: 50%;
     color: var(--icons-color-grey);
       /* outline: 1px solid salmon; */
-       transition:transform
+       transition:  background-color
   var(--transition-timing-function),
-  background-color
-  var(--transition-timing-function),
-  fill
+  color
   var(--transition-timing-function);
 }
 
@@ -569,7 +563,7 @@ letter-spacing: 0.03em;
 color: var(--text-color-black);
  background-color: var(--color-grey);
  border-radius: 4px;
- border-color: transparent;
+ border: none;
  padding: 6px 22px;
   transition: color
   var(--transition-timing-function),
@@ -618,9 +612,7 @@ margin-bottom: 50px;
     border-color: var(--icons-color-grey);
     border: 1px solid;
 border-radius: 4px;
- transition: transform
-  var(--transition-timing-function),
-  border-color
+ transition: border-color
   var(--transition-timing-function),
   color
   var(--transition-timing-function);
@@ -647,22 +639,6 @@ border-radius: 4px;
     flex-wrap: wrap;
     box-sizing: border-box;
   }
-/* .samples-link {
-    display: block;
-}
-
-.samples-link::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 294px;
-    background-color: rgba(33, 150, 243, 0.9);;
-    opacity: 0;
-}
-
-.samples-link:hover::before {
-    opacity: 1;
-} */
 
 .samples-link {
      color: inherit;
